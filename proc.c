@@ -26,6 +26,10 @@ pinit(void)
   initlock(&ptable.lock, "ptable");
 }
 
+struct proc* getPtableProc() {
+  return ptable.proc;
+}
+
 // Must be called with interrupts disabled
 int
 cpuid() {
