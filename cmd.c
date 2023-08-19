@@ -19,5 +19,6 @@ int main(int argc, char *argv[]) {
     wait(); // Wait for the child to exit
     printf(1, "Parent: child created and waited for child to exit\n");
   }
+  exit();
   return 0;
 }
